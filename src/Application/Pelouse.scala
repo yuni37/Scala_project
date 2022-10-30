@@ -1,11 +1,11 @@
 package Application
-class Pelouse {  // Creation d'une instance pelouse qui va contenir les infos sur les frontieres de chaque pelouse
+class Pelouse {  // Creation d'une classe pelouse qui va contenir les infos sur les frontieres de chaque pelouse
   var xBorder = -1
   var yBorder = -1 //initialisation des variables x et y du coin haut droite de la pelouse
 
   /**
    * Methode permettant de définir les frontières de la pelouse
-   * @param coordonnees : une chaine de caractère contenant les deux coordonnées séparées à l'aide d'un espace
+   * @param borders : une chaine de caractère contenant les deux coordonnées groupés et séparés à l'aide d'un espace
    */
   def AddPelouse(borders: String): Unit ={
 
