@@ -4,18 +4,18 @@ class Pelouse {  // Creation d'une instance pelouse qui va contenir les infos su
   var yBorder = -1 //initialisation des variables x et y du coin haut droite de la pelouse
 
   /**
-   * définie les limites de la pelouse
+   * Methode permettant de définir les frontières de la pelouse
    * @param coordonnees : une chaine de caractère contenant les deux coordonnées séparées à l'aide d'un espace
    */
-  def AddPelouse(coordonnees: String): Unit ={
+  def AddPelouse(borders: String): Unit ={
 
-    val t1 = coordonnees.split(" ")
+    val coordonnees = borders.split(" ")
     (
-      t1(0),
-      t1(1)
+      coordonnees(0),
+      coordonnees(1)
     )
-    this.xBorder= t1(0).toInt
-    this.yBorder = t1(1).toInt
+    this.xBorder= coordonnees(0).toInt
+    this.yBorder = coordonnees(1).toInt
   }
 
   /**
